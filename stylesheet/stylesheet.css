@@ -1,16 +1,41 @@
 body{
-
+    background-color: beige;
 }
-@media screen and (min-width:480px){
-
+nav{
+    display: flex;
+    border: chocolate 2px solid;
+    justify-content: space-around;
 }
-@media screen and (min-width:800px) {
+/* with flex */
+ /* @media screen and (min-width:600px){
+    nav {
+            flex-direction: column;
+            padding: 0 20px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
 
+    body{
+        display:flex;
+        gap: 15px;
+    }
+} */
+/* with grid */
+
+nav {
+    border: chocolate 2px solid;
 }
-@media screen and (max-width:1000px) {
+@media screen and (min-width:600px) {
+    nav {
+        flex-direction: column;
+        padding: 0 20px;
+        align-items: center;
+    }
 
-}
-
-@media screen and (max-width:1200px) {
-    
+    body {
+            background-color: beige;
+            display: grid;
+            grid-template-columns: 1fr 4fr;
+            gap: 15px;
+     }
 }
